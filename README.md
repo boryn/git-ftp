@@ -15,6 +15,11 @@ it can be installed with `easy_install gitpython`
 
 Usage: `python git-ftp.py`
 
+Note: If you run git-ftp.py for the first time on an existing project 
+you should upload to the hosting server a `git-rev.txt` file containing 
+SHA1 of the last commit which is already present there. Otherwise git-ftp.py 
+will upload and overwite the whole project which is not necessary.
+
 Storing the FTP credentials
 ---------------------------
 
